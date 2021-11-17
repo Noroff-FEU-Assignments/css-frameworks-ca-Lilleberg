@@ -1,0 +1,16 @@
+/* $colours: (
+  $primary: #e92569,
+  $text: #0a0a0a,
+  $bg-gradient: radial-gradient(#ffffff, #e5e5e5),
+  $light-grey: #efefef,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}
+ */
+
+$primary: #e92569;
+$text: #0a0a0a;
+$bg-gradient: radial-gradient(#ffffff, #e5e5e5);
+$light-grey: #efefef;

@@ -1,6 +1,8 @@
 /* $colours: (
   $primary: #e92569,
   $text: #0a0a0a,
+  $bg-gradient: radial-gradient(#ffffff, #e5e5e5),
+  $light-grey: #efefef,
 );
 
 @function getColour($colour) {
@@ -5908,5 +5910,29 @@ fieldset:disabled .btn {
     -webkit-mask-position: -200% 0%;
             mask-position: -200% 0%;
   }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: red;
+  color: getColour(text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

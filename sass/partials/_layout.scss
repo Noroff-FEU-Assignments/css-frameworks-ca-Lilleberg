@@ -5,8 +5,7 @@ body {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: red;
-  //background: getColour(bg-gradient);
+  background: getColour(bg-gradient);
   color: getColour(text);
   display: flex;
   flex-direction: column;

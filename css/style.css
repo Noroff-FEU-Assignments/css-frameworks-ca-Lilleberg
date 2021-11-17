@@ -7,8 +7,7 @@
 
 @function getColour($colour) {
   @return map-get($colours, $colour);
-}
- */
+} */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -5919,8 +5918,7 @@ body {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: red;
-  color: getColour(text);
+  color: #0a0a0a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

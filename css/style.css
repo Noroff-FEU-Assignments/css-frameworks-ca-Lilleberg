@@ -6003,6 +6003,49 @@ h1, .h1 {
   background-color: #e92569;
 }
 
+.pageNav__link {
+  color: #e92569;
+  border: 1px solid #e92569;
+}
+
+.pageNav__link .active {
+  background-color: #e92569;
+}
+
+.pageNav .page-item.active > span {
+  background-color: #e92569;
+  border-color: #e92569;
+}
+
+.cardGroup__item {
+  border-radius: 10px;
+  border: none;
+}
+
+.cardGroup__item .card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 190px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .cardGroup__item {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.cardGroup__btn {
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(85%, #e92569), color-stop(15%, #767676));
+  background: linear-gradient(90deg, #e92569 85%, #767676 15%);
+  color: #fff;
+}
+
 .footer {
   background-color: #fff;
   color: #767676;

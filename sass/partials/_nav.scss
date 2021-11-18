@@ -1,0 +1,50 @@
+.nav {
+  background: getColour(light-grey);
+
+  &__brand {
+    color: getColour(primary) !important;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &__link {
+    color: getColour(text) !important;
+
+    &--active {
+      @media (min-width: 960px) {
+        background-color: $white;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__item--active {
+    @media (max-width: 959px) {
+      background: $white;
+    }
+  }
+
+  &__search-bar {
+    @media (min-width: 500px) {
+      max-width: 310px;
+    }
+  }
+
+  &__search-input {
+    border: none;
+  }
+
+  &__submit-btn {
+    background-color: getColour(primary);
+    color: $white;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus,
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}

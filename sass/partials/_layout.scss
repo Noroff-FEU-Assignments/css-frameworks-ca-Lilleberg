@@ -5,7 +5,8 @@ body {
 
 body {
   font-family: "Lato", sans-serif;
-  color: $text;
+  color: getColour(text);
+  background: radial-gradient($white, $gradient-to);
   display: flex;
   flex-direction: column;
 }

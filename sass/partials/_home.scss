@@ -1,0 +1,17 @@
+.carousel {
+  &__img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .carousel-indicators.button-group > .button-group__btn {
+    height: 30px;
+    opacity: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &.active {
+      background-color: getColour(primary);
+    }
+  }
+}

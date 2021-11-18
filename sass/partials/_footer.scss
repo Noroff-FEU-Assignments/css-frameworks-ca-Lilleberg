@@ -1,0 +1,8 @@
+.footer {
+  background-color: $white;
+  color: getColour(dark-grey);
+
+  &__icon {
+    font-size: 2rem;
+  }
+}

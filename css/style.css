@@ -6046,6 +6046,60 @@ h1, .h1 {
   color: #fff;
 }
 
+.container p,
+.container i,
+.container label {
+  color: #767676;
+}
+
+.contact__item > i {
+  font-size: 2rem;
+}
+
+.contact__item > p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    margin-top: 70px;
+  }
+}
+
+.form {
+  background-color: #efefef;
+}
+
+.form__label-addon, .form__checkbox, .form__checkbox:checked,
+.form input,
+.form textarea {
+  border: none;
+}
+
+.form__label-addon, .form__btn-submit {
+  color: #fff;
+}
+
+.form__label-addon {
+  background-color: #c7c7c7;
+  padding-top: 10px;
+}
+
+.form textarea {
+  height: 200px;
+}
+
+.form__checkbox, .form__checkbox:checked {
+  background-color: #e92569;
+  height: 30px;
+  width: 30px;
+}
+
+.form__btn-submit {
+  background-color: #767676;
+  font-size: 1.3rem;
+}
+
 .footer {
   background-color: #fff;
   color: #767676;

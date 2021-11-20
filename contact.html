@@ -85,95 +85,105 @@
       </nav>
 
       <main>
-        <div class="container d-flex flex-column flex-md-row">
-          <div class="contact pt-4 order-md-2">
-            <div class="d-flex align-items-center mb-3 contact__item">
-              <i class="bi bi-envelope-fill pe-4"></i>
-              <p>hello@yay.com</p>
-            </div>
-            <div class="d-flex align-items-center mb-3 contact__item">
-              <i class="bi bi-telephone-fill pe-4"></i>
-              <p>123 456 7890</p>
-            </div>
-            <div class="d-flex mb-3 contact__item">
-              <i class="bi bi-geo-alt-fill pe-4"></i>
-              <div class="contact__item">
-                <p>123 Some Street</p>
-                <p>Somewhere</p>
-                <p>Some City</p>
-                <p>10000</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-content order-md-1 me-md-5">
-            <h1 class="my-4">Submit your details</h1>
-
-            <form class="form mb-5 p-4">
-              <label for="nameInput" class="form-label mt-2">Name</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                id="nameInput"
-              />
-
-              <label for="emailInput" class="form-label mt-4">Email</label>
-              <input
-                type="email"
-                class="form-control form-control-lg"
-                id="emailInput"
-              />
-
-              <label for="urlInput" class="form-label mt-4">Website</label>
-              <div class="input-group">
-                <span
-                  class="input-group-text d-none d-lg-block form__label-addon"
-                  id="urlAddon"
-                >
-                  https://
-                </span>
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  id="urlInput"
-                  aria-describedby="urlAddon"
-                />
+        <div class="wrapper">
+          <div class="container">
+            <div class="d-flex flex-column flex-md-row container-contact">
+              <div class="contact order-md-2 ms-md-4">
+                <div class="d-flex align-items-center mb-3 contact__item">
+                  <i class="bi bi-envelope-fill pe-4"></i>
+                  <p>hello@yay.com</p>
+                </div>
+                <div class="d-flex align-items-center mb-3 contact__item">
+                  <i class="bi bi-telephone-fill pe-4"></i>
+                  <p>123 456 7890</p>
+                </div>
+                <div class="d-flex mb-3 contact__item">
+                  <i class="bi bi-geo-alt-fill pe-4"></i>
+                  <div class="contact__item">
+                    <p>123 Some Street</p>
+                    <p>Somewhere</p>
+                    <p>Some City</p>
+                    <p>10000</p>
+                  </div>
+                </div>
               </div>
 
-              <label for="messageInput" class="form-input mt-4">Message</label>
-              <textarea
-                name="message"
-                id="messageInput"
-                class="form-control form-control-lg mt-2"
-              ></textarea>
+              <div class="form-content order-md-1 me-md-5">
+                <h1 class="my-4">Submit your details</h1>
 
-              <div class="my-3 form-check d-flex align-items-center">
-                <input
-                  type="checkbox"
-                  class="form-check-input me-2 form__checkbox"
-                  id="checkBox"
-                />
-                <label class="form-check-label" for="checkBox"
-                  >Allow us to sell your personal details to whomever we
-                  want</label
-                >
+                <form class="form mb-5 p-4 shadow">
+                  <label for="nameInput" class="form-label mt-2">Name</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="nameInput"
+                  />
+
+                  <label for="emailInput" class="form-label mt-4">Email</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="emailInput"
+                  />
+
+                  <label for="urlInput" class="form-label mt-4">Website</label>
+                  <div class="input-group">
+                    <span
+                      class="
+                        input-group-text
+                        d-none d-lg-block
+                        form__label-addon
+                      "
+                      id="urlAddon"
+                    >
+                      https://
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="urlInput"
+                      aria-describedby="urlAddon"
+                    />
+                  </div>
+
+                  <label for="messageInput" class="form-input mt-4"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="messageInput"
+                    class="form-control form-control-lg mt-2"
+                  ></textarea>
+
+                  <div class="my-3 form-check d-flex align-items-center">
+                    <input
+                      type="checkbox"
+                      class="form-check-input me-2 form__checkbox"
+                      id="checkBox"
+                    />
+                    <label class="form-check-label" for="checkBox"
+                      >Allow us to sell your personal details to whomever we
+                      want</label
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="
+                      btn
+                      d-flex
+                      justify-content-center
+                      mx-auto
+                      w-100
+                      py-2
+                      mt-3
+                      form__btn-submit
+                    "
+                  >
+                    Submit
+                  </button>
+                </form>
               </div>
-              <button
-                type="submit"
-                class="
-                  btn
-                  d-flex
-                  justify-content-center
-                  mx-auto
-                  w-100
-                  py-2
-                  mt-3
-                  form__btn-submit
-                "
-              >
-                Submit
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </main>

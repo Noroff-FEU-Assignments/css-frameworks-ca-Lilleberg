@@ -1,11 +1,20 @@
 .pageNav {
   &__link {
-    color: getColour(primary);
     border: 1px solid getColour(primary);
 
     .active {
       background-color: getColour(primary);
     }
+
+    &:focus {
+      box-shadow: none;
+      outline: 1px solid getColour(primary);
+    }
+  }
+
+  &__link,
+  &__link:focus {
+    color: getColour(primary);
   }
 
   .page-item.active > span {

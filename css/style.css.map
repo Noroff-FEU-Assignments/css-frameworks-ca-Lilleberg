@@ -67,9 +67,9 @@
         "../sass/partials/_layout.scss",
         "../sass/partials/_typography.scss",
         "../sass/partials/_nav.scss",
-        "../sass/partials/_home.scss",
-        "../sass/partials/_news.scss",
-        "../sass/partials/_contact.scss",
+        "../sass/partials/pages/_home.scss",
+        "../sass/partials/pages/_news.scss",
+        "../sass/partials/pages/_contact.scss",
         "../sass/partials/_footer.scss"
     ],
     "names": [],

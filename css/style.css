@@ -6120,6 +6120,10 @@ h1, .h1 {
   outline: 1px solid #e92569;
 }
 
+.pageNav__link:hover {
+  color: #e92569;
+}
+
 .pageNav__link, .pageNav__link:focus {
   color: #e92569;
 }
@@ -6140,6 +6144,10 @@ h1, .h1 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cardGroup__item p {
+  color: #767676;
 }
 
 @media (max-width: 768px) {

@@ -10,6 +10,10 @@
       box-shadow: none;
       outline: 1px solid getColour(primary);
     }
+
+    &:hover {
+      color: getColour(primary);
+    }
   }
 
   &__link,
@@ -33,6 +37,10 @@
       height: 190px;
       width: 100%;
       object-fit: cover;
+    }
+
+    & p {
+      color: getColour(dark-grey);
     }
 
     @media (max-width: 768px) {

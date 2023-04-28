@@ -1,0 +1,14 @@
+$colours: (
+  "primary": #e92569,
+  "text": #0a0a0a,
+  "light-grey": #efefef,
+  "dark-grey": #767676,
+  "medium-grey": #c7c7c7,
+);
+
+$gradient-to: #e5e5e5;
+$gradient-card-to: #f5f5f5;
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}

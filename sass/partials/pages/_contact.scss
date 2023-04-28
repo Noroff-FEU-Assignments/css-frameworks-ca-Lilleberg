@@ -1,0 +1,73 @@
+.container-contact {
+  p,
+  i,
+  label {
+    color: getColour(dark-grey);
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+  }
+}
+
+.contact {
+  &__item {
+    & > i {
+      font-size: 2rem;
+    }
+
+    & > p {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 90px;
+  }
+}
+
+.form {
+  background-color: getColour(light-grey);
+
+  &__label-addon,
+  &__checkbox,
+  input,
+  textarea {
+    border: none;
+  }
+
+  &__label-addon,
+  &__btn-submit {
+    color: $white;
+  }
+
+  &__label-addon {
+    background-color: getColour(medium-grey);
+    padding-top: 10px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  &__checkbox {
+    background-color: getColour(primary);
+    height: 30px;
+    width: 30px;
+
+    &:checked {
+      @extend .form__checkbox;
+    }
+  }
+
+  &__btn-submit {
+    background-color: getColour(dark-grey);
+    font-size: 1.3rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: none;
+    outline: 1px solid getColour(primary);
+  }
+}

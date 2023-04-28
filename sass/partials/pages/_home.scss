@@ -1,0 +1,109 @@
+.container {
+  & > p,
+  .card__body > p,
+  .tab-content .tab--grey {
+    color: getColour(dark-grey);
+  }
+
+  .nav__btn,
+  .card__btn {
+    font-size: 19px;
+  }
+
+  .card__btn,
+  .card__btn:focus,
+  .card__btn:hover,
+  .nav__btn:not(.active) {
+    color: getColour(primary);
+  }
+
+  .card-body i,
+  .tab-content i {
+    font-size: 2rem;
+  }
+}
+
+.carousel {
+  &__img {
+    height: 300px;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      height: auto;
+    }
+  }
+
+  .carousel-indicators.button-group > .button-group__btn {
+    height: 30px;
+    opacity: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &.active {
+      background-color: getColour(primary);
+    }
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+
+  &__btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__btn,
+  &__btn:focus,
+  &__btn:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__header {
+    background-color: $white;
+    border-radius: 0 !important;
+  }
+
+  &--t-rounded {
+    border-radius: 10px 10px 0 0 !important;
+  }
+
+  &--b-rounded {
+    border-radius: 0 0 10px 10px !important;
+  }
+
+  &__body {
+    border-top: 1px solid getColour(primary);
+    background: radial-gradient($white, $gradient-card-to);
+  }
+}
+
+.accordion {
+  max-width: 450px;
+  border-radius: 0 0 10px 10px;
+}
+
+.tabs-section {
+  .nav {
+    background: none;
+    border: none;
+
+    &__btn {
+      border-radius: 10px 10px 0 0;
+      border: none;
+    }
+  }
+
+  .tab-content {
+    background: $white;
+    border-radius: 0 10px 10px 10px;
+
+    img {
+      max-width: 238px;
+      height: 149px;
+    }
+  }
+}
